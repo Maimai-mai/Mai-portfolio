@@ -100,8 +100,19 @@ export const FeaturesChess = ({ category }: FeaturesChessProps) => {
   };
   
   return (
-    <section className="py-24 px-6 md:px-16 lg:px-24 bg-black">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-24 px-6 md:px-16 lg:px-24 bg-black relative overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-10 z-0"
+      >
+        <source src="https://raw.githubusercontent.com/Maimai-mai/portfolio/main/feature-video2.mp4" type="video/mp4" />
+      </video>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-20">
           <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block mb-4">
             {category}案例
@@ -186,14 +197,31 @@ export const FeaturesChess = ({ category }: FeaturesChessProps) => {
                 <p className="text-white/60 font-body font-light text-lg mb-8">
                   {items[selectedItem].description}
                 </p>
-                <div className="liquid-glass rounded-2xl overflow-hidden bg-white/5">
-                  <img 
-                    src={items[selectedItem].detailImage} 
-                    alt={items[selectedItem].title} 
-                    className="w-full h-auto object-cover transition-opacity duration-500"
-                    loading="eager"
-                    referrerPolicy="no-referrer"
-                  />
+                <div className="space-y-4">
+                  {/* Video - Only show for 数字藏品 case */}
+                  {items[selectedItem].title === "数字藏品，线上交易平台。" && (
+                    <div className="liquid-glass rounded-2xl overflow-hidden bg-white/5">
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-auto object-cover"
+                      >
+                        <source src="https://raw.githubusercontent.com/Maimai-mai/portfolio/main/case.one%201-video.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  )}
+                  {/* Image */}
+                  <div className="liquid-glass rounded-2xl overflow-hidden bg-white/5">
+                    <img 
+                      src={items[selectedItem].detailImage} 
+                      alt={items[selectedItem].title} 
+                      className="w-full h-auto object-cover transition-opacity duration-500"
+                      loading="eager"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

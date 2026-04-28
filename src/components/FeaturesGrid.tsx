@@ -4,23 +4,23 @@ export const FeaturesGrid = () => {
   const features = [
     {
       icon: Zap,
-      title: "几天，而非数月",
-      description: "从概念到上线，重新定义速度。"
+      title: "极致细节打磨",
+      description: "多品类视觉设计，细节把控品质。"
     },
     {
       icon: Palette,
-      title: "精心打造",
-      description: "每一个细节都经过深思熟虑。每一个元素都经过精心打磨。"
+      title: "全链路落地",
+      description: "5 年多领域经验，全流程落地交付"
     },
     {
       icon: BarChart3,
-      title: "为转化而生",
-      description: "布局基于数据。决策基于性能。"
+      title: "数据驱动设计",
+      description: "数据支撑决策，设计兼顾转化与体验。"
     },
     {
       icon: Shield,
-      title: "默认安全",
-      description: "企业级保护作为标准配置。"
+      title: "高效交付",
+      description: "熟悉多终端适配，高效响应迭代需求。"
     }
   ];
 
@@ -29,7 +29,7 @@ export const FeaturesGrid = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <div className="liquid-glass rounded-full px-3.5 py-1 text-xs font-medium text-white font-body inline-block mb-4">
-            为什么选择我们
+            为什么选择我
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white">
             差异就是一切。

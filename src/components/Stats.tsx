@@ -2,10 +2,10 @@ import { HlsVideo } from './HlsVideo';
 
 export const Stats = () => {
   const stats = [
-    { value: "200+", label: "已上线网站" },
-    { value: "98%", label: "客户满意度" },
-    { value: "3.2x", label: "转化率提升" },
-    { value: "5天", label: "平均交付时间" }
+    { value: "25+", label: "已上线小程序、H5" },
+    { value: "10+", label: "已上线网站、B端后台" },
+    { value: "90%", label: "客户满意度" },
+    { value: "12天", label: "UI平均交付时间" }
   ];
 
   return (

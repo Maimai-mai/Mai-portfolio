@@ -21,18 +21,16 @@ export const Footer = () => {
       <div className="relative z-10 pt-48 pb-12 px-6 md:px-16 lg:px-24 flex flex-col items-center">
         <div className="text-center max-w-4xl mb-24">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading italic text-white mb-8 leading-[0.8]">
-            您的下一个网站从这里开始。
+            以设计，创造落地的价值。
+
           </h2>
           <p className="text-white/60 font-body font-light text-xl mb-12">
-            预约免费策略咨询。了解AI驱动设计的强大功能。
+            From concept to launch, I always believe that good design drives results.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button className="liquid-glass-strong rounded-full px-10 py-5 text-white font-body flex items-center gap-2 hover:bg-white/5 transition-all group text-lg">
-              预约咨询
+              THANKS
               <ArrowUpRight className="w-6 h-6 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
-            <button className="bg-white text-black rounded-full px-10 py-5 text-lg font-medium hover:bg-white/90 transition-colors font-body">
-              查看价格
             </button>
           </div>
         </div>
